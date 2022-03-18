@@ -2,7 +2,7 @@ const clock = document.querySelector("#myClock");
 window.addEventListener("load", () => {
   let name = prompt("Merhaba , Adınız nedir ?");
   let nameSpan = document.querySelector("#myName");
-  if (nameSpan) nameSpan.innerHTML = name;
+  if (name.length>0) nameSpan.innerHTML = name;
 });
 
 function timeformat(date) {
